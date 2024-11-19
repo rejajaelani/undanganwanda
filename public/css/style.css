@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/wellfare-free');
+
+/* font-family: "Dancing Script", cursive; */
+/* font-family: 'Wellfare Free', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.overlayer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/cewe-cowo-pegangan.jpeg');
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.overlayer .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffff;
+    text-align: center;
+    z-index: 999;
+}
+
+.text h1 {
+    font-family: 'Wellfare Free', sans-serif !important;
+    font-size: 113px;
+}
+
+.text h1 span {
+    font-size: 62px;
+    font-family: "Dancing Script", cursive;
+}
+
+.text .dearText {
+    font-style: italic;
+}
+
+.text .textFooter {
+    font-size: 12px;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+.overlayer::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text button {
+    margin: 20px 0;
+    border: 0;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #E4D7C6;
+    transition: 0.5s;
+}
+
+.text button:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+@media (max-width: 450px) {
+    .overlayer {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.main {
+    position: relative;
+}
+
+.slider {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #ccc;
+    background: #fff;
+    overflow: hidden;
+}
+.slider img {
+    width: auto;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+.slider img.active {
+    display: block;
+}
+
+.slider::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main .text {
+    position: absolute;
+    bottom: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffff;
+}
+
+.main .text h4 {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Dancing Script", cursive;
+    font-size: 18px;
+    width: max-content;
+}
+
+.overlayer-blur {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100px;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.9920343137254902) 0%, rgba(255,255,255,0.3029586834733894) 50%, rgba(255,255,255,0) 100%);
+}
+
+.hitungMundur {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.hitungMundur .ht-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffff;
+}
+
+.hitungMundur .ht-text h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 34px;
+    font-family: "Dancing Script", cursive;
+}
+
+.hitungMundur .ht-text P {
+    font-family: "Dancing Script", cursive;
+    font-size: 14px;
+    opacity: 0.8;
+}
