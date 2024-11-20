@@ -11,6 +11,12 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+body {
+    width: 100vw;
+    height: max-content;
+    overflow-x: hidden;
+}
+
 .overlayer {
     position: relative;
     width: 100vw;
@@ -182,4 +188,181 @@
     font-family: "Dancing Script", cursive;
     font-size: 14px;
     opacity: 0.8;
+}
+
+.frame1 {
+    padding: 20px;
+    width: 100vw;
+    height: auto;
+    padding-top: 50px;
+}
+
+.frame1-header-text {
+    margin: auto;
+    width: 850px;
+    font-size: 18px;
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+}
+
+.frame1-box {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frame1-box-image {
+    background: #F4F4F4;
+    width: max-content;
+    border-radius: 20px;
+}
+
+.frame1-box-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+}
+
+.frame1-box-image h1 {
+    margin-top: 20px;
+    font-family: 'Wellfare Free';
+    font-size: 52px;
+    text-align: center;
+}
+
+.frame1-box-image p {
+    margin: auto;
+    margin-bottom: 20px;
+    font-family: 'Dancing Script';
+    width: 250px;
+    text-align: center;
+}
+
+.frame1-box-text-left {
+    position: relative;
+    margin-right: 50px;
+}
+
+.frame1-box-text-left h1:nth-child(2) {
+    color: #E0CFD5;
+    position: absolute;
+    top: -90px;
+    left: -30px;
+    rotate: -90deg;
+    font-size: 45px;
+}
+
+.frame1-box2 {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frame1-box2-image {
+    background: #F4F4F4;
+    width: max-content;
+    border-radius: 20px;
+}
+
+.frame1-box2-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+}
+
+.frame1-box2-image h1 {
+    margin-top: 20px;
+    font-family: 'Wellfare Free';
+    font-size: 52px;
+    text-align: center;
+}
+
+.frame1-box2-image p {
+    margin: auto;
+    margin-bottom: 20px;
+    font-family: 'Dancing Script';
+    width: 250px;
+    text-align: center;
+}
+
+.frame1-box2-text-right {
+    position: relative;
+    margin-left: 50px;
+}
+
+.frame1-box2-text-right h1:nth-child(2) {
+    color: #E4CAB9;
+    position: absolute;
+    top: -80px;
+    left: -20px;
+    rotate: -90deg;
+    font-size: 45px;
+}
+
+.dan-frame1 {
+    margin: 20px auto;
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Dancing Script';
+    font-size: 62px;
+}
+
+@media (max-width: 450px) {
+    .text h1 {
+        width: 100vw;
+        text-align: center;
+    }
+
+    .frame1-header-text {
+        width: 100%;
+        font-size: 18px;
+        margin: 0;
+    }
+}
+
+.frame2 {
+    margin: auto;
+    width: 350px;
+    height: auto;
+}
+
+.title-frame2 {
+    position: relative;
+    font-family: 'Dancing Script';
+    margin: 50px 20px;
+    margin-bottom: 70px;
+}
+
+.title-frame2 span {
+    position: absolute;
+    font-family: 'Wellfare Free';
+    font-size: 42px;
+    bottom: -40px;
+    left: 30px;
+    font-weight: bold;
+    color: #9D876B;
+}
+
+.box-frame2 {
+    padding: 20px;
+    background: #F4F4F4;
+    border-radius: 20px;
+}
+
+.box-frame2 h1 {
+    font-family: 'Dancing Script';
+}
+
+.box-frame2 p:nth-child(2) {
+    font-family: cursive;
+    margin: 0;
+}
+
+.box-frame2 p:nth-child(3) {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: fantasy;
+    opacity: 0.5;
 }

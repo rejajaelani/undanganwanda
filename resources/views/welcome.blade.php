@@ -52,6 +52,52 @@
         <div class="overlayer-blur"></div>
     </div>
 
+    <div class="frame1" style="display: none;">
+        <p class="frame1-header-text">“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir.​”
+        <br>(Ar Rum Ayat 21​)</p>
+
+        <div class="frame1-box">
+            <div class="frame1-box-text-left">
+                <h1>The</h1>
+                <h1>Groom</h1>
+            </div>
+            <div class="frame1-box-image">
+                <img src="{{ asset('images/cowo-sendiri.jpeg') }}">
+                <h1>Wanda Wibiksana</h1>
+                <p>Putra terakhir dari Bpk Zaenal Abidin dan ibu Dede</p>
+            </div>
+        </div>
+
+        <h1 class="dan-frame1">&</h1>
+
+        <div class="frame1-box2">
+            <div class="frame1-box2-image">
+                <img src="{{ asset('images/cewe-sendiri.jpeg') }}">
+                <h1>Gina Fauziah</h1>
+                <p>Putri kedua dari bpk.U Sunarya dan Ibu Siti Sopiah</p>
+            </div>
+            <div class="frame1-box2-text-right">
+                <h1>The</h1>
+                <h1>Bride</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="frame2" style="display: none;">
+        <h1 class="title-frame2">Save <span>The Date</span></h1>
+
+        <div class="box-frame2">
+            <h1>Akad</h1>
+            <p>Minggu, 27 Oktober 2024</p>
+            <p>08:00 WIB</p>
+        </div>
+
+        <div class="box-frame2" style="margin-top: 20px;text-align: right;">
+            <h1>Resepsi</h1>
+            <p>Minggu, 27 Oktober 2024</p>
+            <p>10:00 WIB - Selesai</p>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -61,6 +107,8 @@
             $('#bukaUndangan').on('click', function() {
                 $('.overlayer').fadeOut(500); // Hilangkan dengan durasi 500ms
                 $('.main').fadeIn(5000);
+                $('.frame1').fadeIn(5000);
+                $('.frame2').fadeIn(5000);
             });
 
             let $slides = $('.slider img'); // Semua gambar dalam slider
